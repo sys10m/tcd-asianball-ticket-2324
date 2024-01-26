@@ -1,0 +1,7 @@
+input {
+    display: block;
+}
+
+#submit-btn {
+    background-color: purple;
+}
