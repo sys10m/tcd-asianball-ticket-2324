@@ -1,7 +1,16 @@
+body {
+    text-align: center;
+}
 input {
     display: block;
+    margin: 5px auto;
+    padding: 15px 20px;
+    border-radius: 5px;
 }
 
 #submit-btn {
-    background-color: purple;
+    background-color: blue;
+    margin: 5px auto;
+    padding: 15px 20px;
+    border-radius: 5px;
 }
