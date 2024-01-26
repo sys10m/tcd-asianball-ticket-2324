@@ -13,4 +13,6 @@ submitBtn.addEventListener("click", function(){
         paid: false,
         revMessage: `${nameInput.value}`
     }
+
+    console.log(booking)
 })
