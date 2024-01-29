@@ -3,17 +3,22 @@ from barcode import EAN13
 from barcode.writer import ImageWriter
 from PIL import Image
 
-def generateTicket(hashcode, ticketFileName):
-    template = Image.open(ticketFileName).convert("RGBA")
-    barcode = EAN13(hashcode, writer=ImageWriter())
+def generateTicket(toHash, ticketFileName):
+    template = Image.open("./img/template.png").convert("RGBA")
+    barcode = EAN13(hashBarcode(toHash), writer=ImageWriter())
     # FIXME: save path (expensive)
-    barcode.save("./img/test")
-    barcode = Image.open("./img/test.png").convert("RGBA")
+    barcode.save(ticketFileName)
+    barcode = Image.open(ticketFileName).convert("RGBA")
     # FIXME: calculate offset position
-    xOffset = 0
-    yOffset = 0
+    xOffset = 500
+    yOffset = 1500
 
     template.paste(barcode, (xOffset, yOffset), barcode)
 
+
+    # user .save("filename.png", format="png")
     return template
+
+def hashBarcode(toHash):
+    return "1234567890123"
 

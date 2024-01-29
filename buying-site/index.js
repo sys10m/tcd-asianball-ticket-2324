@@ -5,22 +5,41 @@ const idInput = document.querySelector("#id-input")
 const emailInput = document.querySelector("#email-input")
 const submitBtn = document.querySelector("#submit-btn")
 
+const overlayEl = document.querySelector("#overlay")
+
 // connect to firebase
 
-submitBtn.addEventListener("click", function(){
-    
-    let booking = {
-        name: nameInput.value,
-        id: idInput.value,
-        email: emailInput.value,
-        barcodeHash: barcodeHash(),
-        paid: false,
-        revMessage: `${nameInput.value}`
-    }
+function overlayOn() {
+    overlayEl.style.display = "block";
+}
 
-    console.log(booking)
+function overlayOff() {
+    overlayEl.style.display = "none";
+}
+
+submitBtn.addEventListener("click", function(){
+    // add error handling
+    let theName = nameInput.value
+    let theEmail = emailInput.value
+    let theId = idInput.value
+
+    if (theName == "" || theEmail == "" || theId == ""){
+        console.log("not allow")
+    }
+    else{
+        let booking = {
+            name: theName,
+            id: theId,
+            email: theEmail,
+            barcodeHash: barcodeHash(), // no need to store hash in database
+            paid: false,
+            revMessage: `${nameInput.value}`
+        }
+
+        console.log(booking)
+    }
     // add to firebase
 
     // pop up qr and payment details
-
+    overlayOn()
 })
