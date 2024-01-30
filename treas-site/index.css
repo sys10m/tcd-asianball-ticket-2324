@@ -5,6 +5,7 @@ body {
 #rev-ref {
     display: block;
     margin: 50px auto;
+    width: 300px;
 }
 
 #send-btn {
