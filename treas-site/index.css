@@ -1,0 +1,13 @@
+body {
+    background-color: gray;
+}
+
+#rev-ref {
+    display: block;
+    margin: 50px auto;
+}
+
+#send-btn {
+    display: block;
+    margin: 0px auto;
+}
