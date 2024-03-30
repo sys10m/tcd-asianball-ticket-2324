@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Link{
+  display: contents;
+  text-decoration: None;
+  margin: 0px;
+  padding: 0px;
+}
+
+.themed-btn {
+  background-color: rgb(219, 211, 188);
+  box-shadow: 5px 5px black;
+  padding: 1vh 3vw;
+  margin: 5vh 10vw;
+  cursor: pointer;
+}
+
+.Ticket-info {
+  position: fixed;
+  bottom: 25vh;
+  left: 10vw;
+  background-color: antiquewhite;
+  width: 80vw;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ScanPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(220, 198, 220);
+  height: 100vh;
+  width: 100vw;
+  color: black;
+  margin: 0px;
+}
+
+.ScanPage > div > h1 {
+  margin: 0px;
+}
+
+.scanbox {
+  height: 20vh;
+  width: 75vw;
+}
+
+.ticket-id-input{
+  height: 3vh;
+  width: 55vw;
+  margin-left: 5vw; 
+}
+
+.LoginPage {
+  background-color: rgb(174, 146, 187);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoginPage > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(220, 198, 220);
+  width: 55vw;
+  height: 60vw;
+  border: solid 2px black;
+  box-shadow: 10px 10px;
+}
+.LoginPage > form > * {
+  margin: auto 2vh;
+  width: 35vw;
+  height: 5vw;
+  border: None;
+  border-radius: 5px;
+  text-align: center;
+}
+.LoginPage > form > button {
+  background-color: rgb(222, 222, 204);
+  border: rgb(219, 211, 188) solid 1px;
+}
+.LoginPage > form > button:hover {
+  border: gray solid 1px;
+}
+.StatPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(220, 198, 220);
+}
+.Stats {
+  height: 70vh;
+  width: 80vw;
+  margin: 0px auto;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: row;
+}
+.Stats > div {
+  width: 40vw;
+}
+.Stats > div > p {
+  font-size: 14vh;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

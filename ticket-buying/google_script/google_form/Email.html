@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .revolut {
+        background-color: #2596be;
+        border: gray solid 2px;
+        color: #d6d5d3;
+        border-radius: 10px;
+        width: 280px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .revolut > img {
+        display: block;
+        width: 250px;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .link-button {
+        border: gray solid 2px;
+        background-color: #a07f58;
+        border-radius: 5px;
+        width: 80px;
+        height: 25px;
+        display: block;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: auto auto;
+        color: inherit;
+        text-decoration: none;
+      }
+      .link-button > span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+      }
+      .revolut > h5 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+      }
+      footer {
+        margin-top: 15px;
+        
+      }
+      footer > img {
+        margin-top: 0px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h3>Hi, <?= name ?></h3>
+    <h4>Thank you for reserving a ticket for Asian Ball 2024: Moonlight on the Mekong, kindly supported by Asia 
+Matters.</h4>
+    <h4>We cannot wait to see you there!</h4>
+
+    <h4>Please process the payment using the QR code, link, or details below.</h4>
+    <h4>Don't forget to add the email as your reference in the payment.</h4>
+    <h4>Amount to pay: €<?= amountToPay ?></h4>
+    <div class="revolut">
+      <img 
+src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS1gzNfZCVMeTEB5leOE6Sv-xFD1xWQnU_8j4T9WbR1IJCo4hYUeW3h_myGaLE4s37WOYU7bGrv_IxnfYIMxxq8oSK5uw=s1600" 
+alt="revolut qr code"/>
+      <a class="link-button" href="https://revolut.me/janicea9uw"><span>Click here</span></a> 
+      <h5>or IBAN: IE54REVO99036077674454</h5>
+    </div>
+    <footer>
+      <p>Kindly Sponsored by</p>
+      <img 
+src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQ2b_Y_30f13dz5Zy62iIbMBUNLReJaGnoFDkfAXtvE6jKiwvKJTxzmiAKxi-52EzsQCL1QIfRd-alU9OQlDAjQLzsBkg=s2560" 
+width="100" alt="sponsor logo" />
+    </footer>
+  </body>
+</html>
+
